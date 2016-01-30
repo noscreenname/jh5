@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "jh5",
+    "packageName": "a.m.a",
+    "packageFolder": "a/m/a",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "no",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": true,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "4971f6ee7f069ef41f41915ece43dff7a6cd216a",
+    "testFrameworks": [
+      "gatling"
+    ]
+  }
+}

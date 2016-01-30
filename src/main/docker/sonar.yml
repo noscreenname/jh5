@@ -1,0 +1,6 @@
+jh5-sonar:
+  container_name: jh5-sonar
+  image: sonarqube:4.5.6
+  ports:
+    - "9000:9000"
+    - "9092:9092"

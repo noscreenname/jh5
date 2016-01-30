@@ -1,0 +1,10 @@
+jh5-dev-postgresql:
+  container_name: jh5-dev-postgresql
+  image: postgres:9.4.5
+  # volumes:
+  #   - ~/volumes/jhipster/jh5/dev-postgresql/:/var/lib/postgresql/
+  environment:
+    - POSTGRES_USER=jh5
+    - POSTGRES_PASSWORD=
+  ports:
+    - "5432:5432"
