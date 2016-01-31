@@ -1,0 +1,27 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "parent",
+            "otherEntityName": "parent",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "value",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20160131100150",
+    "dto": "mapstruct",
+    "service": "no",
+    "pagination": "infinite-scroll"
+}

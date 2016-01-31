@@ -1,0 +1,61 @@
+<div>
+    <h2 translate="jh5App.parent.home.title">Parents</h2>
+    <jh-alert></jh-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="parent.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span 
+                        translate="jh5App.parent.home.createLabel">Create new Parent
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr jh-sort="predicate" ascending="reverse" callback="loadAll()">
+                    <th jh-sort-by="id"><span translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="name"><span translate="jh5App.parent.name">Name</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="date"><span translate="jh5App.parent.date">Date</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="description"><span translate="jh5App.parent.description">Description</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="parent in parents track by parent.id">
+                    <td><a ui-sref="parent.detail({id:parent.id})">{{parent.id}}</a></td>
+                    <td>{{parent.name}}</td>
+                        <td>{{parent.date | date:'mediumDate'}}</td>
+                    <td>{{parent.description}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="parent.detail({id:parent.id})"
+                                    class="btn btn-info btn-sm"> 
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="parent.edit({id:parent.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="parent.delete({id:parent.id})"
+                                    class="btn btn-danger btn-sm">                                    
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <uib-pager total-items="totalItems" ng-model="page" ng-change="loadAll()"></uib-pager>
+</div>

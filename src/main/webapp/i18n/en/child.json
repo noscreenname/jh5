@@ -1,0 +1,24 @@
+{
+    "jh5App": {
+        "child" : {
+            "home": {
+                "title": "Childs",
+                "createLabel": "Create a new Child",
+                "createOrEditLabel": "Create or edit a Child",
+                "search": "Search for Child"
+            },
+            "created": "A new Child is created with identifier {{ param }}",
+            "updated": "A Child is updated with identifier {{ param }}",
+            "deleted": "A Child is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Child {{ id }}?"
+            },
+            "detail": {
+                "title": "Child"
+            },
+            "name": "Name",
+            "value": "Value",
+            "parent": "Parent"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "jh5App": {
+        "parent" : {
+            "home": {
+                "title": "Parents",
+                "createLabel": "Créer un nouveau Parent",
+                "createOrEditLabel": "Créer ou éditer un Parent",
+                "search": "Search for Parent"
+            },
+            "created": "Un nouveau Parent a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Parent avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Parent avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Parent {{ id }} ?"
+            },
+            "detail": {
+                "title": "Parent"
+            },
+            "name": "Name",
+            "date": "Date",
+            "description": "Description"
+        }
+    }
+}
+
