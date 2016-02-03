@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar  target/jh5-0.0.1-SNAPSHOT.jar
+heroku deploy:jar --jar target/*.war
