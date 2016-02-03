@@ -1,1 +1,1 @@
-heroku deploy:jar --jar target/*.war --spring.profiles.active=prod
+web : java -Dspring.profiles.active=prod -jar target/*.war
